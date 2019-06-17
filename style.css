@@ -1,0 +1,114 @@
+/* all pages */
+
+* {
+  margin: 0;
+}
+body {
+  background-color:rgb(238, 236, 231);
+  color: #373632;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* intro page */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+h1 {
+  font-size: 5rem;
+  margin-bottom: 3rem;
+
+}
+
+.intro p {
+  font-size: 2rem;
+  text-align: center;
+ 
+  font-weight: 300;
+
+}
+
+.myButton {
+	background-color:#f0c911;
+	-moz-border-radius:28px;
+	-webkit-border-radius:28px;
+	border-radius:28px;
+	border:1px solid #efd43b;
+	display:inline-block;
+	cursor:pointer;
+	color:#373632;
+  font-weight: 700;
+	font-size:30px;
+	padding:18px 31px;
+  text-decoration:none;
+  margin: 5rem;
+}
+.myButton:hover {
+	background-color:#efd43b;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+.footer p {
+  margin-top: 10rem;
+  font-size: 1rem;
+}
+
+/* play page */
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #373632;
+  color: rgb(238, 236, 231);
+  font-size: 1.5rem;
+  padding: 0.7rem;
+}
+
+
+#randomStation {
+  font-size: 2rem;
+}
+
+.round-score {
+  display: flex;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  margin: auto 2rem;
+  text-align: center;
+}
+
+/* image */
+
+.img-container {
+display: flex;
+justify-content: center;
+margin: 2rem auto;
+}
+
+/* canvas */
+
+/* .canvas-container {
+display: flex;
+justify-content: center;
+}
+
+canvas {
+  background-image: url(images/Netzplan.png);
+  background-repeat: no-repeat;
+  background-position: center;
+} */
