@@ -20,7 +20,8 @@ stations.forEach(function(station){
     // console.log(chosenStation)
 
  if (station.name === randomStation.name) {
-   console.log("You got 100 points!");
+  // document.querySelector("#randomStation span").innerHTML  = "hallo"
+   alert("You got 100 points! You are the Lord of the (Berlin) ring!");
 }
 
 else {
@@ -28,12 +29,15 @@ else {
     return Math.abs(item - randomStation.coords[index])
   })
   let difference = differenceArray.reduce(function(acc,val){return acc + val;}, 0);
-  if (difference <= 1000) {console.log("Almost there! You got 90 points!")}
-  else if (difference <= 2000) {console.log("Pretty close! You got 80 points!")}
-  else if (difference <= 3000) {console.log("Not bad! You got 70 points!")};
+
+  if (difference <= 500) {console.log("Almost there! You got 90 points!")}
+  else if (difference <= 1000) {console.log("Pretty close! You got 80 points!")}
+  else if (difference <= 1500) {console.log("Not bad! You got 60 points!")}
+  else if (difference <= 2000) {console.log("Not bad! You got 50 points!")}
+  else if (difference <= 2500) {console.log("Could be closer! You got 40 points!")}
+  else if (difference <= 3000) {console.log("Not really, but you still got 20 points!")}
+  else if (difference > 3000) {console.log("Very far! You got 0 points!")};
 }
 });
  });
-
- //.reduce(function(acc,val){return acc + val;}, 0);
 

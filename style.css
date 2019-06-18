@@ -100,15 +100,27 @@ justify-content: center;
 margin: 2rem auto;
 }
 
-/* canvas */
+/* chosen station */
 
-/* .canvas-container {
-display: flex;
-justify-content: center;
-}
-
-canvas {
-  background-image: url(images/Netzplan.png);
-  background-repeat: no-repeat;
-  background-position: center;
+/* .map-box {
+  display: block;
+background-color:red;
+color: blue;
+border: solid black 10px;
 } */
+
+/* area {
+  display: block;
+background-color:red;
+color: blue;
+border: solid black 10px;
+} */
+
+/* map {
+  display: block;
+  background-color:red;
+  color: blue;
+  border: solid black 10px;
+} */
+
+/*<area id = "Beusselstrasse" coords="321,1,352,28" shape="rect">*/
