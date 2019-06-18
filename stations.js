@@ -30,10 +30,16 @@ const stations = [
 ];
 
 //creating a random station
+function getRandomStation() {
 let randomNumber =  Math.floor(Math.random()  * stations.length)
 let randomStation = stations[randomNumber];
+return randomStation
+}
 
+let randomStation = getRandomStation()
+function setRandomStation (station){
+document.querySelector("#randomStation span").innerHTML = station.name;
+}
 
-document.querySelector("#randomStation span").innerHTML = randomStation.name;
-
+setRandomStation(randomStation);
 
