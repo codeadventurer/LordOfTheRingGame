@@ -61,3 +61,11 @@ document.querySelector("#randomStation span").innerHTML = station.name;
 let randomStation = getRandomStation()
 setRandomStation(randomStation);
 
+function createMessage() {
+  let message = document.querySelector(".img-container div");
+  message.className = "message-box";
+  let text = document.createElement("p");
+  message.appendChild(text);
+}
+
+
