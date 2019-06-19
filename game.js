@@ -116,7 +116,7 @@ stations.forEach(function(station) {
       let message = document.querySelector(".img-container div");
       message.className = "";
 
-      console.log(highlighted);
+  
     
         highlighted.className = "target";
         highlightedRight.className = "target2";

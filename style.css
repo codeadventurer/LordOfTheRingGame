@@ -98,6 +98,7 @@ h1 {
 display: flex;
 justify-content: center;
 margin: 2rem auto;
+position: relative;
 }
 
 .message-box {
@@ -120,33 +121,30 @@ margin: 2rem auto;
 }
 
 .highlight {
-  position: relative;
+  position: inherit;
   height: 27px;
   width: 31px;
   background-color: #f0c911;
-  position: relative;
   top: 1px;
   left: 352px;
 }
 
 .highlight-wrong
 {
-  position: relative;
+  position: inherit;
   height: 27px;
   width: 31px;
   background-color: red;
-  position: relative;
   top: 1px;
   left: 352px;
 }
 
 .highlight-right
 {
-  position: relative;
+  position: inherit;
   height: 27px;
   width: 31px;
   background-color: green;
-  position: relative;
   top: 1px;
   left: 352px;
 }
