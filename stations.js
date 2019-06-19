@@ -1,15 +1,16 @@
 // the list if the stations
 const stations = [
+  //Ring
   { name: "Westend", coords: [3,231,34,256]},
   { name: "Jungfernheide", coords: [112,34,147,64]},
   { name: "Beusselstraße", coords: [321,1,352,28]},
-  { name: "Westhafen", coords: [468,1,504,30]},
+  { name: "Westhafen", coords: [466,1,502,30]},
   { name: "Wedding", coords: [618,0,657,30]},
   { name: "Gesundbrunnen", coords: [872,1,903,27]},
   { name: "Schönhauser Allee", coords: [1095,3,1129,25]},
   { name: "Prenzlauer Allee", coords: [1347,3,1378,27]},
-  { name: "Greiswalder Straße", coords: [1492,72,1459,48]},
-  { name: "Landsberger Allee", coords: [1601,245,1568,218]},
+  { name: "Greiswalder Straße", coords: [1459, 48, 1492,72]},
+  { name: "Landsberger Allee", coords: [1567,217,1601,246]},
   { name: "Storkower Straße", coords: [1568,330,1601,354]},
   { name: "Frankfurter Allee", coords: [1567,423,1601,447]},
   { name: "Ostkreuz", coords: [1567,517,1598,545]},
@@ -27,6 +28,22 @@ const stations = [
   { name: "Halensee", coords: [1,568,34,595]},
   { name: "Westkreuz", coords: [3,487,34,515]},
   { name: "Messe Nord / ICC", coords: [3,370,35,396]},
+
+  //Stadtbahn
+
+  // { name: "Charlottenburg", coords: []},
+  // { name: "Savignyplatz", coords: []},
+  // { name: "Zoologischer Garten", coords: []},
+  // { name: "Tiergarten", coords: []},
+  // { name: "", coords: []},
+  // { name: "", coords: []},
+  // { name: "", coords: []},
+  // { name: "", coords: []},
+  // { name: "", coords: []},
+  // { name: "", coords: []},
+  // { name: "", coords: []},
+  // { name: "", coords: []},
+
 ];
 
 //creating a random station
@@ -36,10 +53,11 @@ let randomStation = stations[randomNumber];
 return randomStation
 }
 
-let randomStation = getRandomStation()
+
 function setRandomStation (station){
 document.querySelector("#randomStation span").innerHTML = station.name;
 }
 
+let randomStation = getRandomStation()
 setRandomStation(randomStation);
 

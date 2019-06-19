@@ -119,28 +119,38 @@ margin: 2rem auto;
   margin: 6rem;
 }
 
+.highlight {
+  position: relative;
+  height: 27px;
+  width: 31px;
+  background-color: #f0c911;
+  position: relative;
+  top: 1px;
+  left: 352px;
+}
+
+.highlight-wrong
+{
+  position: relative;
+  height: 27px;
+  width: 31px;
+  background-color: red;
+  position: relative;
+  top: 1px;
+  left: 352px;
+}
+
+.highlight-right
+{
+  position: relative;
+  height: 27px;
+  width: 31px;
+  background-color: green;
+  position: relative;
+  top: 1px;
+  left: 352px;
+}
 /* chosen station */
 
-/* .map-box {
-  display: block;
-background-color:red;
-color: blue;
-border: solid black 10px;
-} */
 
-/* area {
-  display: block;
-background-color:red;
-color: blue;
-border: solid black 10px;
-} */
-
-/* map {
-  display: block;
-  background-color:red;
-  color: blue;
-  border: solid black 10px;
-} */
-
-/*<area id = "Beusselstrasse" coords="321,1,352,28" shape="rect">*/
 
