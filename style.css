@@ -20,14 +20,14 @@ body {
 }
 
 h1 {
-  font-size: 5rem;
-  margin-bottom: 3rem;
+  font-size: 3.4rem;
+  margin-bottom: 2rem;
   text-align: center;
 
 }
 
 .intro p {
-  font-size: 2rem;
+  font-size: 1.3rem;
   text-align: center;
  
   font-weight: 300;
@@ -45,18 +45,18 @@ h1 {
 
 .myButton {
 	background-color:#f0c911;
-	-moz-border-radius:28px;
-	-webkit-border-radius:28px;
-	border-radius:28px;
+	-moz-border-radius:19px;
+	-webkit-border-radius:19px;
+	border-radius:19px;
 	border:1px solid #efd43b;
 	display:inline-block;
 	cursor:pointer;
 	color:#373632;
   font-weight: 700;
-	font-size:30px;
-	padding:18px 31px;
+	font-size:20px;
+	padding:12px 20px;
   text-decoration:none;
-  margin: 5rem;
+  margin: 3.35rem;
 }
 .myButton:hover {
 	background-color:#efd43b;
@@ -67,8 +67,8 @@ h1 {
 }
 
 .footer p {
-  margin-top: 10rem;
-  font-size: 1rem;
+  margin-top: 6.7rem;
+  font-size: 0.70rem;
 }
 
 /* play page */
@@ -79,8 +79,8 @@ h1 {
   align-items: center;
   background-color: #373632;
   color: rgb(238, 236, 231);
-  font-size: 1.5rem;
-  padding: 0.7rem;
+  font-size: 1rem;
+  padding: 0.47rem;
   width: 100vw;
   position: sticky;
   top:0;
@@ -90,7 +90,7 @@ h1 {
 
 
 #randomStation {
-  font-size: 2rem;
+  font-size: 1.34rem;
   width: 45vw;
 }
 
@@ -105,32 +105,37 @@ h1 {
 .box {
   display: flex;
   flex-direction: column;
-  margin: auto 2rem;
+  margin: auto 1,34rem;
   text-align: center;
 }
 
 /* image */
 
 .big-container {
+  width:100vw;
   display: flex;
   justify-content: center;
 /* margin-top: 2rem;  */
-padding-top: 2rem;
+padding-top: 1.34rem;
 }
 
 .img-container {
 position: relative;
 display: inline-block;
-max-width:100%;
-height: auto;
+
 
 }
 
+/* .game-map {
+  width: 80%;
+  height: auto;
+} */
+
 .message-box {
  position: absolute;
- margin: 10rem 32rem;
-    width: 37.5rem;
-    height: 25rem;
+ margin: 6.7rem 21rem;
+    width: 25rem;
+    height: 17rem;
     border-radius: 10%;
     background-color: #373632;
     background:rgba(0,0,0,0.8);
@@ -152,13 +157,13 @@ height: auto;
 .message-box p {
   color: rgb(238, 236, 231);
   text-align: center;
-  font-size: 2rem;
-  margin: 6rem;
+  font-size: 1.34rem;
+  margin: 4rem;
 }
 
 .highlight {
   position: absolute;
-  border: 8px solid rgba(255, 204, 0, 0.8);
+  border: 5px solid rgba(255, 204, 0, 0.8);
   border-radius: 10%; 
   z-index: 5;
 }
@@ -166,7 +171,7 @@ height: auto;
 .highlight-wrong
 {
   position: absolute;
-  border: 7px solid rgba(218,0,0,0.8);
+  border: 5px solid rgba(218,0,0,0.8);
   border-radius: 10%; 
   z-index: 5;
 }
@@ -174,7 +179,7 @@ height: auto;
 .highlight-right
 {
   position: absolute;
-  border: 8px solid rgba(0,145,0,0.8);
+  border: 5px solid rgba(0,145,0,0.8);
   border-radius: 10%; 
   z-index: 5;
 }
@@ -186,35 +191,35 @@ height: auto;
 
 
 .facebook img{
-  width: 5rem; 
-  height: 5rem;
+  width: 3.35rem; 
+  height: 3.35rem;
   cursor: pointer;
-  margin: 0.5rem;
+  margin: 0.33rem;
 }
 
 .twitter img{
-  width: 5rem; 
-  height: 5rem;
+  width: 3.35rem; 
+  height: 3.35rem;
   cursor: pointer;
-  margin: 0.5rem;
+  margin: 0.33rem;
   
 }
 
 
 p {
-  font-size: 1.5rem;
+  font-size: 1rem;
   text-align: center;
   font-weight: 300;
 
 }
 
 .share-scores {
-  margin-top: 5rem; 
+  margin-top: 3rem; 
 }
 
 .footer-results p{
-  margin-top: 2rem; 
-  font-size: 1rem;
+  margin-top: 1.34rem; 
+  font-size: 0.67rem;
 
 }
 
@@ -235,3 +240,4 @@ a:hover {
 .header p a:hover {
   text-decoration: none;
 }
+
