@@ -20,6 +20,3 @@ function getRandomStation() {
     message.appendChild(text);
   }
 
-  // function showScore() {
-  //   document.querySelector("h1 span").innerHTML = score;
-  // }

@@ -7,6 +7,7 @@ body {
   background-color:rgb(238, 236, 231);
   color: #373632;
   font-family: 'Open Sans', sans-serif;
+  width: 100vw;
 }
 
 /* intro page */
@@ -21,6 +22,7 @@ body {
 h1 {
   font-size: 5rem;
   margin-bottom: 3rem;
+  text-align: center;
 
 }
 
@@ -79,11 +81,17 @@ h1 {
   color: rgb(238, 236, 231);
   font-size: 1.5rem;
   padding: 0.7rem;
+  width: 100vw;
+  position: sticky;
+  top:0;
+  left:0;
+  z-index: 5;
 }
 
 
 #randomStation {
   font-size: 2rem;
+  width: 45vw;
 }
 
 .round-score {
@@ -102,28 +110,43 @@ h1 {
 }
 
 /* image */
+
 .big-container {
   display: flex;
   justify-content: center;
-margin-top: 2rem; 
+/* margin-top: 2rem;  */
+padding-top: 2rem;
 }
 
 .img-container {
 position: relative;
 display: inline-block;
+max-width:100%;
+height: auto;
 
 }
 
 .message-box {
  position: absolute;
  margin: 10rem 32rem;
-    width: 600px;
-    height: 400px;
+    width: 37.5rem;
+    height: 25rem;
     border-radius: 10%;
     background-color: #373632;
     background:rgba(0,0,0,0.8);
     
     
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 7px;
+   
+  }
+
+  .img-container{
+    overflow-x: scroll;
+  }
 }
 
 .message-box p {
@@ -137,6 +160,7 @@ display: inline-block;
   position: absolute;
   border: 8px solid rgba(255, 204, 0, 0.8);
   border-radius: 10%; 
+  z-index: 5;
 }
 
 .highlight-wrong
@@ -144,6 +168,7 @@ display: inline-block;
   position: absolute;
   border: 7px solid rgba(218,0,0,0.8);
   border-radius: 10%; 
+  z-index: 5;
 }
 
 .highlight-right
@@ -151,13 +176,13 @@ display: inline-block;
   position: absolute;
   border: 8px solid rgba(0,145,0,0.8);
   border-radius: 10%; 
+  z-index: 5;
 }
 
 .icons {
  display: flex;
  justify-content: center;
 }
-
 
 
 .facebook img{
@@ -195,10 +220,18 @@ p {
 
 a {
   text-decoration: none;
-  color: #373632
+  color: #373632;
 }
 
 a:hover {
   text-decoration: underline;
 }
 
+.header p a{
+  color: rgb(238, 236, 231);
+  text-decoration: none;
+}
+
+.header p a:hover {
+  text-decoration: none;
+}
