@@ -26,7 +26,7 @@ stations.forEach(function(station) {
 
     if (station.name === randomStation.name) {
       document.querySelector(".message-box p ").innerHTML =
-        "You got 100 points! You are the Lord of the (Berlin) ring!";
+        "Exactly! You got 100 points! You are the Lord of the (Berlin) ring!";
       score = score + 100;
 
       //Highlighting with CSS
@@ -59,31 +59,31 @@ stations.forEach(function(station) {
         return acc + val;
       }, 0);
 
-      if (difference <= 500) {
+      if (difference <= 300) {
         document.querySelector(".message-box p ").innerHTML =
           "Almost there! You got 90 points!";
         score = score + 90;
-      } else if (difference <= 1000) {
+      } else if (difference <= 500) {
         document.querySelector(".message-box p ").innerHTML =
           "Pretty close! You got 80 points!";
         score = score + 80;
-      } else if (difference <= 1500) {
+      } else if (difference <= 700) {
         document.querySelector(".message-box p ").innerHTML =
-          "Not bad! You got 60 points!";
+          "Not bad, you got 60 points!";
         score = score + 60;
-      } else if (difference <= 2000) {
+      } else if (difference <= 1000) {
         document.querySelector(".message-box p ").innerHTML =
-          "Not bad! You got 50 points!";
+          "Not exactly, you got 50 points!";
         score = score + 50;
-      } else if (difference <= 2500) {
+      } else if (difference <= 1500) {
         document.querySelector(".message-box p ").innerHTML =
           "Could be closer! You got 40 points!";
         score = score + 40;
-      } else if (difference <= 3000) {
+      } else if (difference <= 2000) {
         document.querySelector(".message-box p ").innerHTML =
           "Not really, but you still got 20 points!";
         score = score + 20;
-      } else if (difference > 3000) {
+      } else if (difference > 2000) {
         document.querySelector(".message-box p ").innerHTML =
           "Very far! You got 0 points!";
       }
