@@ -32,6 +32,15 @@ h1 {
 
 }
 
+.target {
+  height: 0;
+
+}
+
+.target2 {
+  height: 0;
+}
+
 .myButton {
 	background-color:#f0c911;
 	-moz-border-radius:28px;
@@ -93,17 +102,21 @@ h1 {
 }
 
 /* image */
+.big-container {
+  display: flex;
+  justify-content: center;
+margin-top: 2rem; 
+}
 
 .img-container {
-display: flex;
-justify-content: center;
-margin: 2rem auto;
 position: relative;
+display: inline-block;
+
 }
 
 .message-box {
  position: absolute;
- margin-top: 10rem;
+ margin: 10rem 32rem;
     width: 600px;
     height: 400px;
     border-radius: 10%;
@@ -121,34 +134,71 @@ position: relative;
 }
 
 .highlight {
-  position: inherit;
-  height: 27px;
-  width: 31px;
-  background-color: #f0c911;
-  top: 1px;
-  left: 352px;
+  position: absolute;
+  border: 8px solid rgba(255, 204, 0, 0.8);
+  border-radius: 10%; 
 }
 
 .highlight-wrong
 {
-  position: inherit;
-  height: 27px;
-  width: 31px;
-  background-color: red;
-  top: 1px;
-  left: 352px;
+  position: absolute;
+  border: 7px solid rgba(218,0,0,0.8);
+  border-radius: 10%; 
 }
 
 .highlight-right
 {
-  position: inherit;
-  height: 27px;
-  width: 31px;
-  background-color: green;
-  top: 1px;
-  left: 352px;
+  position: absolute;
+  border: 8px solid rgba(0,145,0,0.8);
+  border-radius: 10%; 
 }
-/* chosen station */
+
+.icons {
+ display: flex;
+ justify-content: center;
+}
 
 
+
+.facebook img{
+  width: 5rem; 
+  height: 5rem;
+  cursor: pointer;
+  margin: 0.5rem;
+}
+
+.twitter img{
+  width: 5rem; 
+  height: 5rem;
+  cursor: pointer;
+  margin: 0.5rem;
+  
+}
+
+
+p {
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: 300;
+
+}
+
+.share-scores {
+  margin-top: 5rem; 
+}
+
+.footer-results p{
+  margin-top: 2rem; 
+  font-size: 1rem;
+
+}
+
+a {
+  text-decoration: none;
+  color: #373632
+}
+
+a:hover {
+  text-decoration: underline;
+}
 

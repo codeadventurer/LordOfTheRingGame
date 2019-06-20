@@ -36,7 +36,7 @@ const stations = [
   { name: "Zoologischer Garten", coords: [357,470,405,508]},
   { name: "Tiergarten", coords: [427,394,461,421]},
   { name: "Bellevue", coords: [541,292,575,320]},
-  { name: "Hauptbahnhof", coords: [705,286,655,246]},
+  { name: "Hauptbahnhof", coords: [655,245,706,287]},
   { name: "Friedrichstraße", coords: [836,245,887,286]},
   { name: "Hackescher Markt", coords: [979,253,1013,282]},
   { name: "Alexanderplatz", coords: [1134,278,1187,319]},
@@ -144,26 +144,5 @@ const stations = [
   {name: "Samariterstraße", coords: [1441,405,1472,430]}, 
 ];
 
-//creating a random station
-function getRandomStation() {
-let randomNumber =  Math.floor(Math.random()  * stations.length)
-let randomStation = stations[randomNumber];
-return randomStation
-}
-
-
-function setRandomStation (station){
-document.querySelector("#randomStation span").innerHTML = station.name;
-}
-
-let randomStation = getRandomStation()
-setRandomStation(randomStation);
-
-function createMessage() {
-  let message = document.querySelector(".img-container div");
-  message.className = "message-box";
-  let text = document.createElement("p");
-  message.appendChild(text);
-}
 
 

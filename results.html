@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Lord Of The Ring</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="images/favicon.ico" />
+  </head>
+  
+  <body>
+    <div class="container">
+      <h1>Well done! You got <span id="final-points"></span> points!</h1>
+
+      <div class="intro">
+        
+        <p>
+          Play often and become the Lord of the (Berlin) Ring!
+        </p>
+      </div>
+
+      <a href="play.html" class="myButton">Play again</a>
+  
+
+      <div class="share-scores">
+        <div><p>Share your score</p>
+        </div>
+      
+       <div class="icons">
+        <div>
+          <span
+            class="facebook"
+            onclick="window.open('http://www.facebook.com/sharer.php?u=https://codeadventurer.github.io/LordOfTheRing'); return false"
+          >
+            <img src="images/facebook.png" />
+          </span>
+        </div>
+        <div>
+          <span
+            class="twitter"
+            onclick="window.open('https://twitter.com/share?url=https://codeadventurer.github.io/LordOfTheRing'); return false"
+          >
+            <img src="images/twitter.png" />
+          </span>
+        </div>
+      </div>
+   
+
+      <div class="footer-results">
+        <p>
+          Inspired by <a href="https://geoguessr.com/">Geoguessr</a>. Made by
+          <a href="https://github.com/codeadventurer">codeadventurer</a> during
+          <a href="https://ironhack.com/en/courses/web-development-bootcamp"
+            >Ironhack</a
+          >
+          bootcamp.
+        </p>
+      </div>
+   
+    </div>
+    <script>
+      var getObject = JSON.parse(localStorage.getItem("storeObj"));
+      document.querySelector("#final-points").innerHTML = getObject.finalPoints;
+    </script>
+  </body>
+</html>

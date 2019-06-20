@@ -19,7 +19,7 @@ stations.forEach(function(station) {
 
   child.addEventListener("click", function() {
     createMessage();
-    
+
     var highlighted = document.querySelector(".target");
     var highlightedRight = document.querySelector(".target2");
     var highlightedWrong = document.querySelector(".target");
@@ -28,22 +28,27 @@ stations.forEach(function(station) {
       document.querySelector(".message-box p ").innerHTML =
         "You got 100 points! You are the Lord of the (Berlin) ring!";
       score = score + 100;
-      
+
       //Highlighting with CSS
 
       highlighted.className = "target highlight";
-      highlighted.style.top = `${station.coords[1]}px`;
-      highlighted.style.left = `${station.coords[2]}px`;
+      highlighted.style.top = `${station.coords[1]-12}px`;
+      highlighted.style.left = `${station.coords[0]-12}px`;
+      highlighted.style.height = `${station.coords[3]-station.coords[1]+10}px`;
+      highlighted.style.width = `${station.coords[2]-station.coords[0]+10}px`;
 
     } else {
       highlightedRight.className = "target2 highlight-right";
-      highlightedRight.style.top = `${randomStation.coords[1]}px`;
-      highlightedRight.style.left = `${randomStation.coords[2]}px`;
+      highlightedRight.style.top = `${randomStation.coords[1]-12}px`;
+      highlightedRight.style.left = `${randomStation.coords[0]-12}px`;
+      highlightedRight.style.height = `${randomStation.coords[3]-randomStation.coords[1]+10}px`;
+      highlightedRight.style.width = `${randomStation.coords[2]-randomStation.coords[0]+10}px`;
 
       highlightedWrong.className = "target highlight-wrong";
-      highlightedWrong.style.top = `${station.coords[1]}px`;
-      highlightedWrong.style.left = `${station.coords[2] + 30}px`;
-
+      highlightedWrong.style.top = `${station.coords[1]-12}px`;
+      highlightedWrong.style.left = `${station.coords[0]-12}px`;
+      highlightedWrong.style.height = `${station.coords[3]-station.coords[1]+10}px`;
+      highlightedWrong.style.width = `${station.coords[2]-station.coords[0]+10}px`;
 
       //Calculating a score
 
@@ -82,46 +87,49 @@ stations.forEach(function(station) {
         document.querySelector(".message-box p ").innerHTML =
           "Very far! You got 0 points!";
       }
+
+     
     }
+
+    let myScore = {
+      finalPoints: score
+    }
+    
+    localStorage.setItem("storeObj", JSON.stringify(myScore));
 
     //Starting a new round
 
-      if (round <10) {
-    round++;
+    if (round < 10) {
+      round++;
 
-    setTimeout(function() {
-      newRandom();
-    }, 3000);
-    setTimeout(function() {
-      BackToNormal();
-    }, 3000);
+      setTimeout(function() {
+        newRandom();
+      }, 3000);
+      setTimeout(function() {
+        BackToNormal();
+      }, 3000);
 
-    function newRandom() {
-      randomStation = getRandomStation();
-      setRandomStation(randomStation);
+      function newRandom() {
+        randomStation = getRandomStation();
+        setRandomStation(randomStation);
 
-      
-      document.querySelector("#round span").innerHTML = round;
-      document.querySelector("#score").innerHTML = score;
+        document.querySelector("#round span").innerHTML = round;
+        document.querySelector("#score").innerHTML = score;
+      }
+    } else {
+      setTimeout(function() {
+        window.location.href = "results.html";
+      }, 3000);
     }
-    }
-    else {
-    setTimeout(function() {
-      alert("Game Over! Your score is " + score + "/1000 points!");
-    }, 3000);
-  }
 
     function BackToNormal() {
       document.querySelector(".message-box p ").innerHTML = "";
       let message = document.querySelector(".img-container div");
       message.className = "";
 
-  
-    
-        highlighted.className = "target";
-        highlightedRight.className = "target2";
-        highlightedWrong.className = "target";
-      
+      highlighted.className = "target";
+      highlightedRight.className = "target2";
+      highlightedWrong.className = "target";
     }
   });
 });
