@@ -67,7 +67,7 @@ h1 {
 }
 
 .footer p {
-  margin-top: 6.7rem;
+  margin-top: 3rem;
   font-size: 0.70rem;
 }
 
@@ -118,14 +118,7 @@ padding-top: 1.34rem;
 .img-container {
 position: relative;
 display: inline-block;
-
-
 }
-
-/* .game-map {
-  width: 80%;
-  height: auto;
-} */
 
 .message-box {
  position: absolute;
@@ -237,3 +230,30 @@ a:hover {
   text-decoration: none;
 }
 
+
+.sbahn {
+  margin-top: 2rem;
+  animation-name: myslidein;
+  animation-duration: 10s;
+  
+}
+.sbahn img {
+  width: 30rem;
+  height: auto;
+}
+
+@keyframes myslidein {
+  0% {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  100% {
+    margin-left: 200%;
+    width: 100%;
+  }
+}
+
+.sbahn:hover {
+  animation-play-state: paused;
+}
