@@ -1,5 +1,7 @@
 <h1>The Lord of the (Berlin) Ring</h1>
 
+![Screenshot](https://github.com/codeadventurer/LordOfTheRingGame/blob/master/images/Screenshot.png)
+
 <h3>How to play</h3>
 
 The aim of the game is to challenge your knowledge of the Berlin trasport system. You get a random U-Bahn or 
@@ -14,11 +16,11 @@ The game is build using JavaScript DOM Manipulation. The map is an image png. fi
 The coordinates of the ares were measured with [Image Map Generator](https://www.image-map.net/). The image-map technology
 allows us to have a responsive design and play the game on small screens.
 
-<h3>Challengies</h3>
+<h3>Challenges</h3>
 
 The most challenging was to find the way to make the image clickable in the right spots and connect them to an algorithm 
 that would calculate the distance between wrong and right station and give the points accordingly. Another challenge was 
 to highlight the stations since you cannot change styles of the image-map areas easily. The solution was to use <div> elements 
-and connect their appearing position and size to the coordinates of the station. 
+and connect their appearing position and size to the coordinates of the stations. 
 
 Play the game [here](https://codeadventurer.github.io/LordOfTheRingGame)
