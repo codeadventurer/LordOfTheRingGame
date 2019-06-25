@@ -4,7 +4,7 @@
 
 <h3>How to play</h3>
 
-The aim of the game is to challenge your knowledge of the Berlin trasport system. You get a random U-Bahn or 
+The aim of the game is to challenge your knowledge of the Berlin transport system. You get a random U-Bahn or 
 S-Bahn station within the ring and you have to guess where it is. When you click on one of the stations you get
 points depending on how far you are from the right station. If you guessed right you get 100 points. 
 
